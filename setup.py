@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(name = 'django-thumbs',
       version = '0.1',
-      description = 'Account handling for django projects, extends django-registration and django-profile',
+      description = 'The easiest way to create thumbnails for your images with Django',
       author = 'Leander Hanwald',
       author_email = 'shockflash@web.de',
 

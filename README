@@ -1,1 +1,0 @@
-Fork of django-thumbs, added support for south, also replaced own scaling routines with the PIL fit() method, which also crops the images. 
