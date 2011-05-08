@@ -11,7 +11,7 @@ import cStringIO
 
 from south.modelsinspector import add_introspection_rules
 
-def generate_thumb(img, thumb_size, format):
+def generate_thumb(img, thumb_size, format = 'JPEG'):
     """
     Generates a thumbnail image and returns a ContentFile object with the thumbnail
     
