@@ -37,28 +37,6 @@ def generate_thumb(img, thumb_size, format = 'JPEG'):
 
     image2 = ImageOps.fit(image, thumb_size, Image.ANTIALIAS)
 
-    """
-    # If you want to generate a square thumbnail
-    if thumb_w == thumb_h:
-        # quad
-        xsize, ysize = image.size
-        # get minimum size
-        minsize = min(xsize, ysize)
-        # largest square possible in the image
-        xnewsize = (xsize - minsize) / 2
-        ynewsize = (ysize - minsize) / 2
-        # crop it
-        image2 = image.crop((xnewsize, ynewsize, xsize - xnewsize, ysize - ynewsize))
-        # load is necessary after crop                
-        image2.load()
-        # thumbnail of the cropped image (with ANTIALIAS to make it look better)
-        image2.thumbnail(thumb_size, Image.ANTIALIAS)
-    else:
-        # not quad
-        image2 = image
-        image2.thumbnail(thumb_size, Image.ANTIALIAS) 
-    """
-
     io = cStringIO.StringIO()
     # PNG and GIF are the same, JPG is JPEG
     if format.upper() == 'JPG':
