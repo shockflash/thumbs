@@ -166,4 +166,4 @@ add_introspection_rules([
                 "sizes": ["sizes", {"default": None}],
             },
 ),
-    ], ["^addons\.models\.ImageWithThumbsField"])
+    ], ["^thumbs\.models\.ImageWithThumbsField"])
